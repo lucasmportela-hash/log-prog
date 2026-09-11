@@ -1,24 +1,16 @@
-jogador1 = str (input("Jogador um informe a sua jogada: "))
-jogador2 = str (input("Jogador dois informe a sua jogada: "))
-
-if(jogador1 == "pedra" and jogador2 == "pedra"):
+import random
+jogadas = ["pedra", "papel", "tesoura"]
+jogador = input("Jogador Pedra, Papel ou Tesoura: ").lower()
+pc = random.choice(jogadas)
+print(pc)
+if (jogador not in jogadas):
+    print("Jogada invalida!")
+elif(jogador == pc):
     print("Empate!")
-elif(jogador1 == "papel" and jogador2 == "papel"):
-    print("Empate!")
-elif(jogador1 == "tesoura" and jogador2 == "tesoura"):
-    print("Empate!")
-    
-elif(jogador1 == "tesoura" and jogador2 == "papel"):
-    print(f"{jogador1} ganhou de {jogador2}")
-elif(jogador1 == "tesoura" and jogador2 == "pedra"):
-     print(f"{jogador2} ganhou de {jogador1}")
-elif(jogador1 == "pedra" and jogador2 == "tesoura"):
-    print(f"{jogador1} ganhou de {jogador2}")
-elif(jogador1 == "pedra" and jogador2 == "papel"):
-    print(f"{jogador2} ganhou de {jogador1}")
-elif(jogador1 == "papel" and jogador2 == "tesoura"):
-    print(f"{jogador2} ganhou de {jogador1}")
-elif(jogador1 == "papel" and jogador2 == "pedra"):
-    print(f"{jogador1} ganhou de {jogador2}")
+elif((jogador == "papel" and pc == "pedra") 
+    or (jogador == "pedra" and pc == "tesoura") 
+    or (jogador == "tesoura" and pc == "papel")
+):
+     print(f"{jogador} ganhou de {pc}")
 else:
-    print("jogada invalida")
+    print(f"{pc} ganhou de {jogador}")
