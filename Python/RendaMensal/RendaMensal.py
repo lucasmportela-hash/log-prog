@@ -1,0 +1,1 @@
+RendaMensal = 1.500
