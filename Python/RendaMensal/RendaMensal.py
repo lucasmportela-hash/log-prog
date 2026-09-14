@@ -5,7 +5,7 @@ if RestricoesEntrada == "verdadeiro":
     Restricoes = True
 else:
     Restricoes = False
-if (score >= 700 and RendaMensal > 4000 and Restricoes == False):
+if (score >= 700 and RendaMensal >= 4000 and Restricoes == False):
     print("APROVADO")
 elif (RendaMensal >= 2500 and Restricoes == False and score >= 500) or (RendaMensal >6000):
     print("APROVADO")
