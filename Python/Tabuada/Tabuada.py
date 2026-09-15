@@ -1,7 +1,5 @@
 num = int (input("Digite um número: "))
-i = 0
-while(i < 10):
-    i += 1
-    tabuada = num * i
-    print(f"{num} X {i} = {tabuada}")
+for i in range (0, 10):
+    tabuada = num * (i + 1)
+    print(f"{num} X {i+1} = {tabuada}")
   
