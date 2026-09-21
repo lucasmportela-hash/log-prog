@@ -4,7 +4,7 @@
 Notas = []
 Nomes = []
 AcimaMedia = []
-for i in range(3):
+for i in range(10):
     Nome = str(input(f"Digite o seu nome aluno {i + 1}: "))
     Nomes.append(Nome)
     Nota = float(input(f"Digite a sua média: "))
