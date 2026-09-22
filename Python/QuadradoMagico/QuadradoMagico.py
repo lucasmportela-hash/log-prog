@@ -35,6 +35,6 @@ for j in range(3):
 Diagonal1 = Matriz[0][0] + Matriz[1][1] + Matriz[2][2]
 Diagonal2 = Matriz[0][2] + Matriz[1][1] + Matriz[2][0]
 if Linhas and Colunas and Diagonal1 == 15 and Diagonal2 == 15:
-    print("\nParabéns! Você formou um Quadrado Mágico!")
+    print("Você formou um Quadrado Mágico!")
 else:
-    print("\nNão é um Quadrado Mágico.")
+    print("Não é um Quadrado Mágico!")
