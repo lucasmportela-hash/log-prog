@@ -3,7 +3,7 @@
 listaNum = []
 maior = 0
 for i in range(10):
-    numero = int(input(f"Digite o número {i + 1}: "))
+    numero = float(input(f"Digite o número {i + 1}: "))
     listaNum.append(numero)
     if numero > 10:
         maior += 1
