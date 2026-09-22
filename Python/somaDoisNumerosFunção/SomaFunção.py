@@ -1,3 +1,6 @@
+# Construa um programa onde o usuário digitará dois números, utilizando
+# passagem de parâmetros e, dentro da função, irá calcular a soma desses
+# dois números.
 def soma(a, b):
     return a + b
 num1 = float(input("Digite o primeiro número: "))

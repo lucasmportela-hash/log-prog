@@ -1,3 +1,4 @@
+# Construa um programa que exiba a sequência de Fibonacci
 def fibo(n):
     if n == 1 or n == 2:
         return 1

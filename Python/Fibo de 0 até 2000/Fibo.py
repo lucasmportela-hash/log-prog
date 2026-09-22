@@ -1,3 +1,5 @@
+# Construa um programa que exiba a sequência de Fibonacci de zero até dois
+# mil.
 contagem = 0
 result = 0
 while (contagem != 1597):

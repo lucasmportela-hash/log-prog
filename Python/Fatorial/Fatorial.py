@@ -1,3 +1,4 @@
+# Construa um programa que exiba o fatorial de um numero
 def fatorial(n):
     fat = 1
     if n == 0 or n == 1:
