@@ -8,13 +8,17 @@ class Funcionarios:
         self.Cargo = Cargo
         if (Cargo == "professor"):
             self.Disciplina = Disciplina
-for i in range(1):
+for i in range(5):
     Nome = str(input(f"Digite seu nome {i+1}: "))
     Salario = float(input("Digite seu salario: "))
     Cargo = str(input("Digite seu cargo: ").lower())
     if (Cargo == "professor"):
-        Disciplina = str(input("Digite sua disciplina: ").lower())
+        Disciplina = str(input("Digite sua disciplina: "))
     else:
         Disciplina = ""
     Funcionario = Funcionarios(Nome, Salario, Cargo, Disciplina)
-print(f"{Nome} você é {Cargo} {Disciplina} e tem um salário de {Salario:.2f}")
+    if Salario >= 2000:
+        print(f"Salario Acima de 2000! {Nome}")
+    if (Disciplina == "Matemática"):
+       print(f"{Nome} Você leciona Matemática!") 
+    print(f"{Nome} você é {Cargo} e tem um salário de {Salario:.2f}")
