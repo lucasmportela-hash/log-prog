@@ -16,7 +16,7 @@ class Funcionarios:
         if self.salario >= 2000:
             print("Salário acima de 2000!")
 funcionarios = []
-for i in range(1):
+for i in range(5):
     nome = input("Digite seu nome: ")
     salario = float(input("Digite seu salário: "))
     cargo = input("Digite seu cargo: ").strip().lower()
