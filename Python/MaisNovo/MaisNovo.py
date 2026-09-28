@@ -5,7 +5,7 @@ for i in range(10):
     Nome = input(f"Digite seu nome {i + 1}: ")
     Idade = int(input("Digite a sua idade: "))
     Lista.append([Nome, Idade])
-    MaisNovo = Lista[0][1]
+MaisNovo = Lista[0][1]
 for i in range(1, 10):
     if Lista[i][1] < MaisNovo:
         MaisNovo = Lista[i][1]
