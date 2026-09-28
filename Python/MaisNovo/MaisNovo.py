@@ -6,6 +6,7 @@ for i in range(3):
     Nome = input(f"Digite seu nome {i + 1}: ")
     Idade = int(input("Digite a sua idade: "))
     Lista.append([Nome, Idade])
+# MaisNovo = min(Lista, key=lambda pessoa: pessoa[1])
 MaisNovo = 0
 for i in range(1, len(Lista)):
     if Lista[i][1] < Lista[MaisNovo][1]:
