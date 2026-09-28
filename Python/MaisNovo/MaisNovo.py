@@ -6,7 +6,7 @@ for i in range(10):
     Idade = int(input("Digite a sua idade: "))
     Lista.append([Nome, Idade])
 MaisNovo = Lista[0][1]
-for i in range(1, 10):
+for i in range(1, len(Lista)):
     if Lista[i][1] < MaisNovo:
         MaisNovo = Lista[i][1]
 print(f"{MaisNovo} é o mais novo!")
