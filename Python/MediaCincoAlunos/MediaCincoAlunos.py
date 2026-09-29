@@ -1,18 +1,14 @@
 # Construa uma página onde o usuário digitará o nome e a média de cinco
 # alunos e o programa só aceitará a média do aluno caso ela esteja entre zero
 # e dez.
-Notas = []
-Nomes = []
+Lista = []
 i = 0
-while i < 5:
+for i in range(5):
     Nome = str(input(f"Digite o seu nome aluno {i + 1}: "))
-    Nota = float(input("Digite a sua média: "))
-    if (Nota >= 0 and Nota <= 10):
-        Nomes.append(Nome)
-        Notas.append(Nota)
-        i += 1
-    else:
+    Media = float(input("Digite a sua média: "))
+    while ( Media < 0 or Media > 10):
         print("Media Invalida!")
-print(Nomes)
-print(Notas)
+        Media = float(input("Digite a sua média: "))
+    Lista.append([Nome, Media])
+print(Lista)
 
