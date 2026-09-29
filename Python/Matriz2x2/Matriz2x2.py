@@ -2,13 +2,16 @@
 # dos valores digitados deverão ser calculadas.
 Matriz = []
 soma = 0
+contador = 0
 for i in range(2):
     linha = []
     for j in range(2):
         valor = int(input(f"Digite o valor [{i}][{j}]: "))
         linha.append(valor)
-        soma += valor
     Matriz.append(linha)
-media = soma / 4
-print(f"Soma: {soma}")
-print(f"Média: {media}")
+for linha in range (len(Matriz)):
+    for coluna in range (len(Matriz[linha])):
+        soma += Matriz[linha][coluna]
+        contador += 1
+media = soma/contador
+print(f"Média: {media} \nSoma: {soma}")
