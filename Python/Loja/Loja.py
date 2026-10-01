@@ -31,8 +31,8 @@ while (cliente != 0):
     elif (total > 100):
             total = total * 0.95
     faturamentototal = total + faturamentototal
-    parcelas = int (input("Quantas parcelas serão? (1 a 6) "))
     while (parcelas <= 0 or parcelas >= 6):
+        parcelas = int (input("Quantas parcelas serão? (1 a 6) "))
         if (parcelas == 1):
             print (total)
         elif(parcelas <= 6):
