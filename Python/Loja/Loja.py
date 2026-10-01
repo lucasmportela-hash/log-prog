@@ -32,15 +32,12 @@ while (cliente != 0):
     elif (total > 100):
             total = total * 0.95
     faturamentototal = total + faturamentototal
+    parcelas = int (input("Quantas parcelas serão? (1 a 6) "))
     while (parcelas < 1 or parcelas > 6):
+        print("Quantidade de parcelas invalidas")
         parcelas = int (input("Quantas parcelas serão? (1 a 6) "))
-        if (parcelas < 1 or parcelas > 6):
-            print("Quantidade de parcelas invalidas")
-    if (parcelas == 1):
-        print (total)
-    elif(parcelas <= 6):
-        total = total / parcelas
-        for i in range(parcelas, 0, -1):
-            print(f"{i} parcela de {total:.2f}")
+    total = total / parcelas
+    for i in range(parcelas, 0, -1):
+        print(f"{i}º parcela de {total:.2f}")
     cliente = float (input("Novo cliente? "))
 print(f"Faturamento total de: {faturamentototal:.2f}") 
