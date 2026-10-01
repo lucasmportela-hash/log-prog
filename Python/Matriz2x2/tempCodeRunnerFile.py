@@ -1,2 +1,0 @@
-
-        soma += Matriz[i][j]
