@@ -1,2 +1,0 @@
-
-        Menor = Nome1;
