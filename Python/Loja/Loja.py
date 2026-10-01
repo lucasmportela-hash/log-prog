@@ -30,7 +30,7 @@ while (cliente != 0):
     if (total > 200):
          total = total * 0.9
     elif (total > 100):
-            total = total * 0.95
+        total = total * 0.95
     faturamentototal = total + faturamentototal
     parcelas = int (input("Quantas parcelas serão? (1 a 6) "))
     while (parcelas < 1 or parcelas > 6):
