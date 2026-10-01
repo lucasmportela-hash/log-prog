@@ -24,10 +24,10 @@
 import time
 senha = 0 
 tentativa = 2
-while (senha < 10000 and senha < 1000):
+while (senha < 1000 or senha >= 10000):
     senha = int (input("Informe uma senha: "))
 while (tentativa != -1):
-    resposta = int (input("Digite a senha "))
+    resposta = int (input("Digite a senha: "))
     if (resposta == senha):
         print("Acesso concedido")
         break   
