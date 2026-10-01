@@ -20,6 +20,7 @@
 faturamentototal = 0.0
 cliente = 1
 produto = 0.0
+parcelas = 0
 while (cliente != 0):
     total = 0.0
     while (produto != -1):
@@ -31,7 +32,7 @@ while (cliente != 0):
     elif (total > 100):
             total = total * 0.95
     faturamentototal = total + faturamentototal
-    while (parcelas <= 0 or parcelas >= 6):
+    while (parcelas <= 1 or parcelas >= 6):
         parcelas = int (input("Quantas parcelas serão? (1 a 6) "))
         if (parcelas == 1):
             print (total)
