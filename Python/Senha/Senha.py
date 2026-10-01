@@ -12,13 +12,11 @@
 # de tentativas.
 # ● Se estiver incorreta: informe quantas chances ainda
 # restam usando if/elif/else.
-
 # ■ Se o acesso for liberado com sucesso, use um loop for para
 # simular uma contagem regressiva de inicialização do sistema
 # (de 5 até 1).
 # ■ Se as 3 tentativas falharem, exiba a mensagem de conta
 # bloqueada.
-
 # ○ Restrição: Todas as validações devem ser puramente lógicas e
 # aritméticas, sem manipulação de listas ou estruturas compostas.
 import time
