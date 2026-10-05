@@ -18,27 +18,29 @@
 # índices para percorrer as listas de forma sincronizada.
 Saldo = []
 Codigo = [] 
-SaldoMaior = -1
+Condicao = True
 for i in range(6):
         num = int(input(f"Digite o código do produto {i+1}: "))
         Codigo.append(num)
         num = int(input(f"Informe o saldo em estoque do produto {i+1}: "))
         Saldo.append(num)
 Minimo = int(input(f"Informe o Estoque Mínimo de Segurança: "))
-SaldoMenor = Saldo[1]
+SaldoMaior = Saldo[0]
+CodigoMaior = Codigo[0]
+SaldoMenor = Saldo[0]
+CodigoMenor = Codigo[0]
 for i in range(6):
     if Saldo[i] < Minimo:
         print(f"O produto de código {Codigo[i]} com uma quantidade de: {Saldo[i]} está abaixo do Estoque Mínimo de Segurança!")
-    else:
-        condicao = True
+        Condicao = False
     if Saldo[i] < SaldoMenor:
         SaldoMenor = Saldo[i]
         CodigoMenor = Codigo[i] 
-    elif Saldo[i] > SaldoMaior:
+    if Saldo[i] > SaldoMaior:
         SaldoMaior = Saldo[i]
         CodigoMaior = Codigo[i]
-if condicao == True:
+if Condicao == True:
     print("Estoque Operando em Parâmetros Normais!")
-print(Saldo,Codigo)
-print(SaldoMenor,CodigoMenor)
-print(SaldoMaior,CodigoMaior)        
+print(F"Saldos:  {Saldo}\nCódigos: {Codigo}")
+print(f"O produto com o código: {CodigoMenor} tem o menor saldo de: {SaldoMenor}")
+print(f"O produto com o código: {CodigoMaior} tem o maior saldo de: {SaldoMaior}")      
