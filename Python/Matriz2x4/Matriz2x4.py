@@ -15,5 +15,6 @@ for Linha in Matriz:
     for valor in Linha:
         if valor < Limiar:
             Contador += 1
-    print(Linha)
+        print(valor, end="\t")
+    print()
 print(f"{Contador} estão abaixo do limiar!")

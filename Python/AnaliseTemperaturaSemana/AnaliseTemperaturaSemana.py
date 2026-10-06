@@ -6,7 +6,7 @@ Lista = []
 Total = 0 
 Media = 0
 for i in range (7):
-    num = int (input(f"Digite a temperatura média do dia {i+1} da semana: "))
+    num = float (input(f"Digite a temperatura média do dia {i+1} da semana: "))
     Lista.append(num)
 Media = sum(Lista)/7
 for i in range (7):
