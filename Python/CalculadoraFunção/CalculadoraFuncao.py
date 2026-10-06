@@ -1,6 +1,6 @@
 import operator
-def calcular(ope1, ope2, op):
-    return op(ope1, ope2)
+def calcular(var1, var2, op):
+    return op(var1, var2)
 operacoes = {
     "+": operator.add,
     "-": operator.sub,
@@ -14,7 +14,7 @@ while True:
     if operador not in operacoes:
         print("Operação inválida!")
         continue
-    ope1 = float(input("Operador 1: "))
-    ope2 = float(input("Operador 2: "))
-    resultado = calcular(ope1, ope2, operacoes[operador])
+    var1 = float(input("Variável 1: "))
+    var2 = float(input("Variável 2: "))
+    resultado = calcular(var1, var2, operacoes[operador])
     print("Resultado:", resultado)
