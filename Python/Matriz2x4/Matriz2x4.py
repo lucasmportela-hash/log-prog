@@ -4,15 +4,16 @@
 # contagem total, além de imprimir a matriz completa formatada em linhas e colunas.
 Matriz = []
 Contador = 0
-Limiar = int(input("Informe um limiar: "))
 for i in range(2):
     Linha = []
     for j in range(4):
         valor = int(input(f"Digite o valor [{i}][{j}]: "))
-        if valor < Limiar:
-            Contador += 1
         Linha.append(valor)
     Matriz.append(Linha)
+Limiar = int(input("Informe um limiar: "))
 for Linha in Matriz:
+    for valor in Linha:
+        if valor < Limiar:
+            Contador += 1
     print(Linha)
 print(f"{Contador} estão abaixo do limiar!")
