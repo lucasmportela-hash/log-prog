@@ -21,24 +21,26 @@
 # ● Restrição Técnica: O processamento deve utilizar unicamente
 # acumuladores e variáveis numéricas primitivas (float e int), sem o uso de
 # listas ou estruturas compostas.
-km = float(input("Informe a distãncia em km percorrida: "))
 consumo = 0
+contadorkm = 0
 contador = 0
 media = 0
-litro = 0
+km = float(input("Informe a distãncia em km percorrida: "))
 while km != 0:
-    contador += 1
+    litro = 0
     while litro == 0:
         litro = float(input("Informe a quantidade de combustível em litros consumida: "))
     consumo = km / litro
-    media = media + consumo
     if consumo >= 12:
         print("Econômico")
-    elif consumo >= 9 and 11:
+    elif 9 <= consumo < 12:
         print("Padrão")
     elif(consumo < 9):
         print("Alto Consumo")
+    media += consumo
+    contador += 1
+    contadorkm += km
     km = float(input("Informe a distãncia em km percorrida: "))
 print(f"Quantidade de veículos auditados: {contador}")
 print(f"Media geral de consumo da frota no turno: {media}")
-print(f"Quantidade de veículos auditados: {contador}")
+print(f"Quilometragem total da frota: {contadorkm}")
