@@ -13,16 +13,16 @@
 # banco_candidatos e exibir um relatório contendo: Nome, E-mail e Formação  
 # de cada candidato apto.
 banco_candidatos = [] 
-for i in range (2):
-    candidato = {}
-    candidato["nome"] = input(f"Digite o seu nome candidato {i+1} : ")
-    candidato["idade"] = int(input("Digite a sua idade: "))
-    if candidato["idade"] < 18:
+for i in range (5):
+    nome = input(f"Digite o seu nome candidato {i+1} : ")
+    idade = int(input("Digite a sua idade: "))
+    if idade < 18:
         print("Idade inválida")
         continue
-    candidato["telefone"] = (input("Informe o seu telefone: "))
-    candidato["email"] = (input("Informe o seu email: "))
-    candidato["formacao"] = (input("Qual a sua formação: "))
+    telefone = (input("Informe o seu telefone: "))
+    email = (input("Informe o seu email: "))
+    formacao = (input("Qual a sua formação: "))
+    candidato = {"nome":nome, "idade":idade, "telefone":telefone, "email":email, "formacao":formacao}
     banco_candidatos.append(candidato)
 for candidato in banco_candidatos:
     print("Nome:", candidato["nome"])
