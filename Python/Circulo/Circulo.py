@@ -15,7 +15,8 @@ canvas.pack()
 canvas.create_oval(
     0, 0, 500, 500,
     outline="white",
-    width=2
+    width=2,
+    fill="red"
 )
 # Mantém a janela aberta
 janela.mainloop()
