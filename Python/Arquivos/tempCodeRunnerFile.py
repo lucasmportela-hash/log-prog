@@ -1,2 +1,6 @@
-with open("dados.txt", "a", encoding="utf-8") as arquivo:
-    arquivo.write("Nova linha\n")
+import csv
+cabecalho = ["marca","modelo","ano"]
+with open("carros.csv", "w", encoding="utf-8", newline='') as arquivo:
+    escritor = csv.DictWriter(arquivo, fieldnames="cabecalho", delimiter=";")
+    escritor.writeheader()
+    escritor.writerows(dados)
