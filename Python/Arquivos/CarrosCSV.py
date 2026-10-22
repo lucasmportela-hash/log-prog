@@ -20,5 +20,7 @@ with open("carros.csv", "r", newline="", encoding="utf-8") as arquivo:
                 modelo = carro["modelo"]
                 ano = carro["ano"]
                 print(f"Marca: {marca}, Modelo: {modelo}, Ano: {ano}")
-        except:
-            print("Erro na leitura!")
+        except FileNotFoundError:
+            print("Arquivo não encontrado!")
+        except FileExistsError:
+            print("O arquivo já existe!")
