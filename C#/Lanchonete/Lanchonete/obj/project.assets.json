@@ -1,42 +1,36 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {}
+    "netcoreapp3.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": []
+    "netcoreapp3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Lucas\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\lucas.m\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas\\Documents\\Estácio\\Trabson\\Lanchonete\\Lanchonete\\Lanchonete.csproj",
+      "projectUniqueName": "C:\\Users\\lucas.m\\Documents\\log-prog\\C#\\Lanchonete\\Lanchonete\\Lanchonete.csproj",
       "projectName": "Lanchonete",
-      "projectPath": "C:\\Users\\Lucas\\Documents\\Estácio\\Trabson\\Lanchonete\\Lanchonete\\Lanchonete.csproj",
-      "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucas\\Documents\\Estácio\\Trabson\\Lanchonete\\Lanchonete\\obj\\",
+      "projectPath": "C:\\Users\\lucas.m\\Documents\\log-prog\\C#\\Lanchonete\\Lanchonete\\Lanchonete.csproj",
+      "packagesPath": "C:\\Users\\lucas.m\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucas.m\\Documents\\log-prog\\C#\\Lanchonete\\Lanchonete\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\lucas.m\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.0": {
+          "framework": "netcoreapp3.0",
           "targetAlias": "netcoreapp3.0",
           "projectReferences": {}
         }
@@ -45,10 +39,17 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "netcoreapp3.0": {
+        "framework": "netcoreapp3.0",
         "targetAlias": "netcoreapp3.0",
         "imports": [
           "net461",
@@ -56,7 +57,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -83,7 +85,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
