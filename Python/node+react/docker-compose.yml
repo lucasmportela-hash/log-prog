@@ -1,0 +1,21 @@
+services:
+
+  backend:
+    build: ./backend
+    container_name: thermal-backend
+    restart: unless-stopped
+
+    expose:
+      - "3000"
+
+  frontend:
+    build: ./frontend
+    container_name: thermal-frontend
+
+    ports:
+      - "8080:80"
+
+    depends_on:
+      - backend
+
+    restart: unless-stopped
