@@ -32,7 +32,7 @@ Os arquivos de produção serão gerados na pasta `dist`.
 ## Estrutura
 
 ```text
-calculadora-react-sem-vite/
+calculadora/
 ├── public/
 │   └── index.html
 ├── src/
