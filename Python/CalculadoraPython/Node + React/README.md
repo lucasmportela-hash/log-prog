@@ -1,6 +1,6 @@
-# Calculadora React (sem Vite)
+# Calculadora 
 
-Projeto frontend feito com React, Webpack e Babel.
+Projeto frontend e backend feito com React, Webpack e Babel.
 
 ## Requisitos
 - Node.js instalado
