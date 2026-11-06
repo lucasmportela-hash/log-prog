@@ -22,4 +22,4 @@ while not sair:
     print(f"Resultado da operação é: {resultado:.2f}")
     condicao = input("Deseja sair? Sim | Não ").strip().lower()
     if condicao == "sim":
-        sair = True
+        sair = False
