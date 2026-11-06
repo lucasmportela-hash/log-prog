@@ -5,3 +5,40 @@
 .empty-state{display:flex;min-height:210px;align-items:center;justify-content:center;flex-direction:column;text-align:center}.empty-icon{width:43px;height:43px;display:grid;place-items:center;border:1px solid #31594f;border-radius:13px;color:var(--mint);font-size:23px}.empty-state p{margin:12px 0 4px;font-size:12px}.empty-state small{color:var(--muted);font-size:10px}.result-label{display:block;margin-top:22px;color:var(--muted);font:9px 'DM Mono',monospace;letter-spacing:1px}.consumption-value{display:block;margin:6px 0;font-size:38px;letter-spacing:-1px}.consumption-value small{font-size:14px;color:var(--muted)}.classification{display:inline-block;padding:7px 10px;border-radius:20px;background:#17362d;color:var(--green);font-size:10px;font-weight:800}.classification.padrao{background:#392f1e;color:var(--yellow)}.classification.alto{background:#3a2028;color:var(--red)}.result-details{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.result-details span{display:block;color:var(--muted);font-size:10px}.result-details b{display:block;margin-top:5px;font:12px 'DM Mono',monospace}.legend{display:grid;gap:10px;margin-top:17px}.legend>div{display:flex;align-items:center;gap:9px}.dot{width:8px;height:8px;border-radius:50%}.green{background:var(--green)}.yellow{background:var(--yellow)}.red{background:var(--red)}.legend b,.legend small{display:block;font-size:10px}.legend small{margin-top:2px;color:var(--muted);font-size:9px}
 .closing{margin-top:14px}.closing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}.closing-grid>div{padding:14px;border:1px solid var(--line);border-radius:9px;background:#0e1a29}.closing-grid strong{display:block;margin-top:9px;font-size:21px}.closing-message{color:var(--muted);font-size:11px}.outline{border:1px solid var(--line);background:transparent;color:var(--text)}.feedback{margin-top:17px;padding:13px 15px;border:1px solid var(--line);border-radius:9px;background:#0e1927;color:#bdcbd5;font-size:11px}.feedback.error{border-color:#75404a;color:var(--red)}.feedback.success{border-color:#31594f;color:var(--mint)}footer{padding:22px;color:#62788d;text-align:center;font:9px 'DM Mono',monospace;letter-spacing:1.4px}
 @media(max-width:700px){body{padding:22px 12px}.workspace{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.metric{padding:14px}.metric strong{font-size:22px}.live{display:none}.brand-copy h1{font-size:22px}.closing-grid{grid-template-columns:1fr}.panel{padding:16px}}
+
+
+
+/* NOVA IDENTIDADE: painel de frota — claro, verde e âmbar */
+:root{color-scheme:light;--bg:#f3f6f1;--panel:#fff;--line:#dce5da;--muted:#718071;--text:#203126;--accent:#247a50;--red:#c94b43}
+*{box-sizing:border-box}
+body{background:linear-gradient(135deg,#f7f8f2 0%,#eaf1e8 100%);color:var(--text);font-family:Arial,sans-serif}
+.container{width:min(1120px,100%);margin:0 auto;padding:34px 22px}
+.topbar{padding:18px 22px;border-radius:18px;background:#1f4935;color:#fff;box-shadow:0 12px 28px #1c49351a}
+.brand-mark{border-radius:12px;background:#d7e9d6;color:#1f4935}
+.eyebrow{color:#8bc69c;font-size:10px;letter-spacing:1.7px}
+.brand-copy h1{font-size:25px;letter-spacing:-.8px}.brand-copy h1 em{color:#bce2a7}
+.brand-copy p{color:#d0dfd3}.live{color:#d9e9dc}
+.metrics{gap:14px;margin:22px 0}
+.metric,.panel{border:1px solid var(--line);border-radius:15px;background:#fff;box-shadow:0 8px 25px #24452b0a}
+.metric{padding:19px}.metric span{color:#718071}.metric strong{color:#247a50;font-size:27px}
+.workspace{gap:16px}.panel{padding:23px}.section-head h2{font-size:19px}
+.tag,.closed-tag{border:1px solid #d6e6d6;background:#edf6ec;color:#286c43;border-radius:6px}
+.description{color:#718071;line-height:1.65}
+label{color:#34483a}input{border:1px solid #ccd9cc;border-radius:9px;background:#fbfdf9;color:#203126;padding:13px}
+input:focus{border-color:#39845a;box-shadow:0 0 0 3px #39845a1b}
+.primary,.outline,.finish-button{border-radius:9px;font-weight:700}
+.primary{background:#247a50;color:#fff}.primary:hover{background:#195e3c}
+.outline{background:#fff;color:#315c40;border:1px solid #cad9ca}
+.finish-button{background:#f1b94f;color:#3d2a0b}
+.stop-note{background:#fff7e6;border:1px solid #f0dcae;color:#6f5016;border-radius:12px}
+.stop-note p{color:#806b40}.stop-note strong{color:#59400f}
+.empty-state{background:#f7faf5;border:1px dashed #cbd9ca;border-radius:14px;color:#6f806f}
+.empty-icon{background:#e7f1e4;color:#247a50}
+.result-label{color:#738273}.consumption-value{color:#247a50}
+.classification{border-radius:8px}
+.result-details,.legend{border-color:#e3eae1}
+.closing{background:#f8fbf6}
+.closing-grid>div{background:#eef5eb;border-radius:10px;padding:14px}
+.feedback{background:#fff;border:1px solid var(--line);border-radius:10px}
+footer{color:#89978a}
+@media(max-width:760px){.container{padding:20px 13px}.topbar{padding:16px}.workspace{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}}

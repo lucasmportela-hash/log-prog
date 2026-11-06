@@ -493,3 +493,50 @@ footer {
         gap: 10px;
     }
 }
+
+
+
+/* NOVA IDENTIDADE: centro de operações — gelo, azul aço e ciano */
+:root{--background:#eef3f8;--surface:#fff;--surface-light:#f4f8fc;--border:#d6e1ec;--blue:#176b9b;--green:#23835e;--red:#c84d4d;--text:#172d40;--muted:#71869a}
+*{box-sizing:border-box}
+body{background:#eef3f8;color:var(--text);font-family:Inter,"Segoe UI",Arial,sans-serif}
+.topbar{background:#fff;border-bottom:1px solid var(--border);padding:18px max(5%,calc((100% - 1250px)/2));box-shadow:0 3px 14px #1a3c5a0a}
+.brand-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:12px;background:#e2f2fa;color:#176b9b}
+.brand h1{font-size:18px;color:#173a55;letter-spacing:1.5px}
+.brand span{color:#7890a4}
+.online-status{padding:8px 12px;border:1px solid #cce6d9;border-radius:20px;background:#f0faf5;color:#23835e;font-size:10px}
+.online-status span{background:#23835e}
+.container{max-width:1250px;padding:32px 25px}
+.welcome{padding:24px 26px;border:1px solid var(--border);border-radius:16px;background:linear-gradient(110deg,#fff 0%,#f2f9fd 100%);box-shadow:0 8px 24px #234c6a0a}
+.tag{color:#176b9b;font-size:10px;letter-spacing:1.8px}
+.welcome h2{font-size:27px;color:#173a55}
+.welcome p{color:#71869a;line-height:1.6}
+.operation{border:1px solid #cfe2ee;border-radius:10px;background:#eaf5fb;color:#176b9b}
+.operation span{color:#71869a}
+.overview{gap:14px;margin-bottom:30px}
+.overview-card{background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:0 5px 20px #234c6a0a}
+.overview-card svg{color:#176b9b}
+.overview-card span,.overview-card small{color:#71869a}
+.overview-card strong{color:#176b9b}
+.monitor-section,.results{margin-top:28px}
+.section-title{border-bottom:1px solid var(--border);padding-bottom:13px}
+.section-title h2{color:#173a55}
+.racks-grid{gap:14px}
+.rack-card{background:#fff;border:1px solid var(--border);border-radius:14px;box-shadow:0 5px 18px #234c6a08}
+.rack-header{padding-bottom:13px;border-bottom:1px solid #e7eef4}
+.rack-header svg{color:#176b9b}
+.rack-header h3{color:#173a55}
+.rack-status{color:#23835e}
+.sensor label{color:#71869a}
+.input-wrapper{background:#f5f9fc;border:1px solid #d6e1ec;border-radius:8px}
+.input-wrapper svg{color:#176b9b}
+.input-wrapper input{color:#173a55}
+.input-wrapper input::placeholder{color:#a0b1bf}
+.input-wrapper:focus-within{border-color:#4b9ac2;box-shadow:0 0 0 3px #4b9ac21a}
+.input-wrapper span{color:#71869a}
+.actions button{border-radius:8px}
+.btn-primary{background:#176b9b;color:#fff}
+.btn-primary:hover{background:#10557c}
+.btn-secondary{background:#fff;color:#176b9b;border:1px solid #c9dce8!important}
+.results{padding:22px;border:1px solid var(--border);border-radius:14px;background:#fff}
+@media(max-width:800px){.topbar{padding:16px 20px}.container{padding:22px 14px}.overview,.racks-grid{grid-template-columns:1fr}.welcome{align-items:flex-start;flex-direction:column}}

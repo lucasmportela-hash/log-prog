@@ -61,3 +61,39 @@ footer { padding: 8px 0 24px; text-align: center; color: #9aa2b1; font-size: 11p
     .acoes-formulario, .lista-cabecalho { align-items: stretch; flex-direction: column; }
     .botao-principal, .botao-secundario { width: 100%; }
 }
+
+
+
+/* NOVA IDENTIDADE: secretaria escolar — editorial em vinho e papel */
+:root{font-family:Georgia,"Times New Roman",serif;color:#30252a;background:#f7f1e9}
+*{box-sizing:border-box}
+body{background:#f7f1e9;color:#30252a}
+.topo{background:#552c3b;padding:25px 24px;border-bottom:5px solid #c69b63}
+.topo-conteudo{max-width:1180px}
+.marca{background:#e8d8bd;color:#552c3b;border-radius:4px;font-family:Georgia,serif}
+.topo h1{font-family:Georgia,serif;font-size:23px;letter-spacing:.2px}
+.sobre-titulo{color:#c9a978;font-family:Arial,sans-serif;letter-spacing:1.8px}
+.container{max-width:1180px;margin:34px auto}
+.introducao h2{font-size:30px;font-weight:500}
+.introducao p:not(.sobre-titulo),.painel-cabecalho p{color:#81736f;font-family:Arial,sans-serif}
+.contador{background:#efe3d2;color:#6c3948;border:1px solid #dfcdb5;border-radius:4px}
+.painel{background:#fffdf9;border:1px solid #e8ded2;border-radius:5px;box-shadow:0 7px 22px #4b30200a}
+.painel h2{font-size:20px;font-weight:500}
+.painel-cabecalho{border-bottom:1px solid #eee4d8;padding-bottom:15px}
+.campo{color:#6b5358;font-family:Arial,sans-serif}
+.campo input,.campo select{background:#fffefa;border:1px solid #ded2c7;border-radius:4px;color:#30252a}
+.campo input:focus,.campo select:focus{border-color:#9b5d6b;box-shadow:0 0 0 3px #9b5d6b18}
+.botao{border-radius:4px;font-family:Arial,sans-serif}
+.botao-principal{background:#743d50;color:#fff}
+.botao-principal:hover{background:#592d3d}
+.botao-secundario{background:#f1e7dc;color:#743d50;border:1px solid #e0cfc0}
+table{font-family:Arial,sans-serif}
+th{background:#f4ece3;color:#755e5d}
+td{border-bottom:1px solid #eee7df}
+.tag{border-radius:3px}
+.tag-alerta{background:#fff0d8;color:#8b5c17}
+.tag-info{background:#f1e3e8;color:#783e54}
+.tag-ok{background:#e8efe5;color:#486447}
+.botao-excluir{border-radius:4px}
+footer{font-family:Arial,sans-serif;color:#a09288}
+@media(max-width:560px){.container{margin:22px auto}.introducao h2{font-size:24px}}

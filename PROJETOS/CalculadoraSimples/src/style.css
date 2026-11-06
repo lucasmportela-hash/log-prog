@@ -223,3 +223,35 @@ footer {
     font-size: 29px;
   }
 }
+
+
+
+/* NOVA IDENTIDADE: calculadora de mesa — lavanda, grafite e amarelo */
+:root{font-family:"Trebuchet MS",Arial,sans-serif;color:#28243a;background:#eeebf7}
+*{box-sizing:border-box}
+body{min-height:100vh;background:radial-gradient(circle at 15% 10%,#fff 0,#eeebf7 52%,#ded8ee 100%);color:#28243a}
+.page{min-height:100vh;display:grid;place-items:center;padding:32px 16px}
+.calculator{width:min(100%,520px);padding:clamp(24px,5vw,42px);border:1px solid #d7d0e7;border-radius:28px;background:#fff;box-shadow:0 24px 65px #3c31501c}
+.eyebrow{color:#8271b3;font-size:10px;font-weight:800;letter-spacing:2px}
+h1{color:#29243c;font-size:34px;letter-spacing:-1.5px}
+.subtitle{color:#827d91;line-height:1.6}
+form{margin-top:25px}
+label{color:#514b65;font-size:12px;font-weight:800}
+input,select{border:1px solid #d9d3e6;border-radius:12px;background:#faf9fd;color:#28243a;padding:14px}
+input:focus,select:focus{outline:3px solid #ded7f4;border-color:#8d7bc0}
+.actions{gap:10px}
+button{border:0;border-radius:12px;font-weight:800;transition:.18s}
+button:hover:not(:disabled){transform:translateY(-2px)}
+.primary{background:#7562ad;color:white;box-shadow:0 7px 15px #7562ad30}
+.secondary{background:#f1eef8;color:#66558e}
+.message{border-radius:10px;background:#f5f2fb;color:#625779;padding:12px}
+.error{background:#fff0ef;color:#a43e42}
+.result{margin-top:20px;padding:20px;border-radius:16px;background:#28243a;color:#fff}
+.result span{color:#c5bce0}.result strong{color:#f4d66f;font-size:32px}
+.history{margin-top:22px;border-top:1px solid #eeeaf5;padding-top:18px}
+.history h2{color:#39334d;font-size:17px}
+.clear-history{color:#8271b3;background:transparent}
+.history li{padding:10px 12px;border-radius:9px;background:#f7f5fb;margin:7px 0}
+.history li strong{color:#66558e}
+.empty,footer{color:#9b96a8}
+@media(max-width:520px){h1{font-size:29px}.calculator{border-radius:20px}}
